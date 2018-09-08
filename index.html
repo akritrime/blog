@@ -1,40 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124603757-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-124603757-1');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Porfolio - Projects</title>
+    <title>About Me - Akritrime</title>
     <script src="./index.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i" rel="stylesheet"> 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="http://akritrime.github.io/">Home</a></li>
-                <!-- <li>About</li> -->
-                <li><a href="http://akritrime.github.io/projects">Projects</a></li>
-                <li class="clicked">Blog</li>
+    <!-- <nav class="fullscreen center hidden">
+        <p>X</p>
+        <ul class="center center_column center_left">
+            <li>home</li>
+            <li>blog</li>
+            <li>projects</li>
+        </ul>
+    </nav> -->
+    <div class="fullscreen grid col-12 row-12">
+        <header class="fullspace text_white">
+            <p class="fullspace center center_left">blog.</p>
+            <ul class="fullspace">
+                <!-- <li>home</li> -->
+                <!-- <li>projects</li> -->
+                <li><a href="https://akritrime.github.io">akritrime</a></li>
+                <!-- <li id="burger" class="hidden">|||</li> -->
             </ul>
-        </nav>
-    </header>
-    <main>
-        <div id="text">
-            <div id="name">
-                <h1>blog</h1>
+        </header>
+        <main class="center center_right col-4 row-3">
+            <h1 class="hidden">Coming Soon</h1>
+        </main>
+        <footer class="fullspace">
+            <div class="center fullspace">
+                <p id="footer_text"></p>
             </div>
-            <div id="intro">
-                <ul>
-                    <li>One TODO</li>
-                    <li>Two TODO</li>
-                    <li>Three TODO</li>
-                </ul>
-            </div>
-        </div>
-        <div id="pic">
-            <!-- <img src="./akritrime.svg" alt="akritrime"> -->
-        </div>
-        
-    </main>
+        </footer>
+    </div>
 </body>
+<!-- <script>
+
+    let nav = document.getElementsByTagName('nav')[0]
+    
+    let m = document.getElementById('burger')
+    m.onclick = (el, ev) => {
+        nav.classList.remove('hidden')
+    }
+    let close = document.querySelector('nav>p')
+    close.onclick = (el, ev) => {
+        nav.classList.add('hidden')
+    }
+    
+    
+</script> -->
+
+<script src="./game.js"></script>
+<!-- <script src="./float_shape.js"></script> -->
+<!-- <script src="particle.js"></script> -->
 </html>
